@@ -15,3 +15,23 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+# Игнорируем папку сборки
+/target/
+/build/
+
+# Файлы IDE
+/.idea/
+
+
+# Логи и временные файлы
+/logs/
+/*.log
+
+# Maven и Gradle файлы кеша
+/.mvn/
+/.m2/
+/.gradle/
+/*.jar
+/*.war
+/*.ear
