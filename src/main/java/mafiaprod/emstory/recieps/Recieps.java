@@ -258,9 +258,9 @@ public class Recieps {
                 ),
                 "quantum_spectrometer",
                 Arrays.asList(
-                    Map.entry(Material.LAPIS_LAZULI, 2),
+                    Map.entry(Material.LAPIS_LAZULI, 4),
                     Map.entry(Material.ENDER_EYE, 1),
-                    Map.entry(Material.IRON_INGOT, 1)
+                    Map.entry(Material.IRON_INGOT, 3)
                 ),
                 ChatColor.BLUE
             )
@@ -277,7 +277,7 @@ public class Recieps {
                 ),
                 "ender_capacitor",
                 Arrays.asList(
-                    Map.entry(Material.ENDER_PEARL, 1),
+                    Map.entry(Material.ENDER_PEARL, 3),
                     Map.entry(Material.GOLD_BLOCK, 3),
                     Map.entry(Material.REDSTONE, 3)
                 ),
@@ -296,8 +296,9 @@ public class Recieps {
                 ),
                 "amethyst_circuit",
                 Arrays.asList(
-                    Map.entry(Material.AMETHYST_BLOCK, 1),
-                    Map.entry(Material.COPPER_INGOT, 2)
+                    Map.entry(Material.AMETHYST_SHARD, 4),
+                    Map.entry(Material.AMETHYST_BLOCK, 2),
+                    Map.entry(Material.COPPER_INGOT, 4)
                 ),
                 ChatColor.LIGHT_PURPLE
             )
@@ -314,7 +315,10 @@ public class Recieps {
                 ),
                 "redstone_chip",
                 Arrays.asList(
-                    Map.entry(Material.REDSTONE, 3),
+                    Map.entry(Material.REDSTONE, 5),
+                    Map.entry(Material.COPPER_INGOT, 1),
+                    Map.entry(Material.GOLD_INGOT, 1),
+                    Map.entry(Material.DIAMOND, 1),
                     Map.entry(Material.IRON_INGOT, 1)
                 ),
                 ChatColor.RED
@@ -351,7 +355,8 @@ public class Recieps {
                 "unstable_netherite_alloy",
                 Arrays.asList(
                     Map.entry(Material.NETHERITE_INGOT, 2),
-                    Map.entry(Material.QUARTZ, 1),
+                    Map.entry(Material.QUARTZ, 3),
+                    Map.entry(Material.AMETHYST_SHARD, 2),
                     Map.entry(Material.ENDER_EYE, 1)
                 ),
                 ChatColor.DARK_RED
@@ -369,7 +374,7 @@ public class Recieps {
                 ),
                 "antiparticle_generator",
                 Arrays.asList(
-                    Map.entry(Material.CRYING_OBSIDIAN, 2),
+                    Map.entry(Material.OBSIDIAN, 3),
                     Map.entry(Material.LAPIS_BLOCK, 1)
                     // Редстоуновый Чип добавляется отдельно
                 ),
@@ -389,7 +394,8 @@ public class Recieps {
                 "ender_void_crystal",
                 Arrays.asList(
                     Map.entry(Material.ENDER_PEARL, 2),
-                    Map.entry(Material.AMETHYST_SHARD, 5)
+                    Map.entry(Material.AMETHYST_SHARD, 3),
+                    Map.entry(Material.REDSTONE, 3)
                 ),
                 ChatColor.DARK_AQUA
             )
@@ -407,7 +413,8 @@ public class Recieps {
                 "obsidian_shell",
                 Arrays.asList(
                     Map.entry(Material.OBSIDIAN, 4),
-                    Map.entry(Material.NETHERITE_INGOT, 1)
+                    Map.entry(Material.NETHERITE_INGOT, 1),
+                    Map.entry(Material.IRON_INGOT, 4)
                 ),
                 ChatColor.DARK_GRAY
             )
@@ -441,7 +448,8 @@ public class Recieps {
                 ),
                 "gravitational_core",
                 Arrays.asList(
-                    Map.entry(Material.IRON_BLOCK, 5),
+                    Map.entry(Material.IRON_BLOCK, 3),
+                    Map.entry(Material.COPPER_BLOCK, 2),
                     Map.entry(Material.NETHERITE_INGOT, 1),
                     Map.entry(Material.REDSTONE, 3)
                 ),
@@ -460,7 +468,7 @@ public class Recieps {
                 ),
                 "space_resonator",
                 Arrays.asList(
-                    Map.entry(Material.AMETHYST_BLOCK, 1),
+                    Map.entry(Material.AMETHYST_BLOCK, 3),
                     Map.entry(Material.CRYING_OBSIDIAN, 3)
                 ),
                 ChatColor.LIGHT_PURPLE
@@ -478,7 +486,8 @@ public class Recieps {
                 ),
                 "obsidian_frame",
                 Arrays.asList(
-                    Map.entry(Material.OBSIDIAN, 8)
+                    Map.entry(Material.OBSIDIAN, 6),
+                    Map.entry(Material.IRON_INGOT, 3)
                 ),
                 ChatColor.DARK_GRAY
             )
@@ -512,8 +521,11 @@ public class Recieps {
                 ),
                 "quartz_display",
                 Arrays.asList(
-                    Map.entry(Material.QUARTZ, 4),
-                    Map.entry(Material.REDSTONE, 4)
+                    Map.entry(Material.QUARTZ, 3),
+                    Map.entry(Material.GLASS, 1),
+                    Map.entry(Material.REDSTONE, 3),
+                    Map.entry(Material.IRON_INGOT, 1),
+                    Map.entry(Material.GOLD_INGOT, 1)
                 ),
                 ChatColor.WHITE
             )
@@ -547,9 +559,10 @@ public class Recieps {
                 ),
                 "quantum_piezo",
                 Arrays.asList(
-                    Map.entry(Material.QUARTZ_BLOCK, 1),
+                    Map.entry(Material.QUARTZ_BLOCK, 3),
+                    Map.entry(Material.BLAZE_POWDER, 2),
                     Map.entry(Material.REDSTONE, 2),
-                    Map.entry(Material.LAPIS_LAZULI, 1)
+                    Map.entry(Material.LAPIS_LAZULI, 2)
                 ),
                 ChatColor.WHITE
             )
@@ -567,8 +580,8 @@ public class Recieps {
                 "superconducting_magnet",
                 Arrays.asList(
                     Map.entry(Material.NETHERITE_INGOT, 2),
-                    Map.entry(Material.IRON_BLOCK, 1),
-                    Map.entry(Material.PACKED_ICE, 1)
+                    Map.entry(Material.IRON_BLOCK, 3),
+                    Map.entry(Material.PACKED_ICE, 3)
                 ),
                 ChatColor.DARK_GRAY
             )
@@ -585,9 +598,10 @@ public class Recieps {
                 ),
                 "radiation_crystal",
                 Arrays.asList(
-                    Map.entry(Material.AMETHYST_SHARD, 1),
+                    Map.entry(Material.AMETHYST_SHARD, 3),
                     Map.entry(Material.GLOWSTONE, 2),
-                    Map.entry(Material.ENDER_PEARL, 1)
+                    Map.entry(Material.REDSTONE, 1),
+                    Map.entry(Material.ENDER_PEARL, 3)
                 ),
                 ChatColor.LIGHT_PURPLE
             )
@@ -604,8 +618,9 @@ public class Recieps {
                 ),
                 "copper_catalyst",
                 Arrays.asList(
-                    Map.entry(Material.COPPER_INGOT, 3),
-                    Map.entry(Material.BLAZE_POWDER, 1)
+                    Map.entry(Material.COPPER_INGOT, 5),
+                    Map.entry(Material.BLAZE_POWDER, 2),
+                    Map.entry(Material.LAPIS_LAZULI, 2)
                 ),
                 ChatColor.GOLD
             )
@@ -623,7 +638,8 @@ public class Recieps {
                 "obsidian_resonator",
                 Arrays.asList(
                     Map.entry(Material.OBSIDIAN, 4),
-                    Map.entry(Material.DIAMOND_BLOCK, 1)
+                    Map.entry(Material.DIAMOND_BLOCK, 1),
+                    Map.entry(Material.AMETHYST_SHARD, 4)
                 ),
                 ChatColor.DARK_PURPLE
             )

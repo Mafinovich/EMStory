@@ -115,11 +115,6 @@ public class NetherInvasionEvent implements Listener {
         
         // Оповещаем всех игроков о начале события
         for (Player player : Bukkit.getOnlinePlayers()) {
-            player.sendTitle(
-                    ChatColor.DARK_RED + "Завеса разорвана!",
-                    ChatColor.RED + "По миру открываются разломы...",
-                    20, 100, 20
-            );
             player.playSound(player.getLocation(), Sound.ENTITY_WITHER_SPAWN, 1.0f, 0.5f);
         }
         
@@ -135,13 +130,6 @@ public class NetherInvasionEvent implements Listener {
                 if (created >= count) {
                     plugin.getLogger().info("Создано " + fractures.size() + " разломов");
                     saveFractures();
-                    
-                    // Оповещаем игроков о завершении события
-                    for (Player player : Bukkit.getOnlinePlayers()) {
-                        player.sendMessage(ChatColor.RED + "[Внимание] " + 
-                                ChatColor.GOLD + "Межпространственные разломы стабилизировались. " +
-                                "Будьте осторожны при встрече с ними.");
-                    }
                     
                     cancel();
                     return;
@@ -181,8 +169,6 @@ public class NetherInvasionEvent implements Listener {
                 // Уведомляем ближайших игроков
                 for (Player player : overworld.getPlayers()) {
                     if (player.getLocation().distance(location) < 200) {
-                        player.sendMessage(ChatColor.RED + "[Внимание] " + 
-                                ChatColor.GOLD + "Рядом с вами открылся межпространственный разлом!");
                         player.playSound(player.getLocation(), Sound.AMBIENT_CAVE, 1.0f, 0.5f);
                     }
                 }
@@ -596,7 +582,6 @@ public class NetherInvasionEvent implements Listener {
                 event.setCancelled(true);
                 
                 // Уведомляем игрока
-                event.getPlayer().sendMessage(ChatColor.RED + "Этот разлом нестабилен и не позволяет телепортироваться!");
                 event.getPlayer().playSound(playerLoc, Sound.BLOCK_PORTAL_TRIGGER, 0.5f, 0.5f);
                 
                 // Создаем эффект отторжения

@@ -201,8 +201,10 @@ public class DispenserCrafting implements Listener {
         if (block.getType() != Material.DISPENSER) return;
 
         if(isDispenserCrafter(block)){
-            player.sendMessage(ChatColor.RED + "Ты че баклан, дефективный?");
-            event.setCancelled(true);
+            if(!(player.hasPermission("emstory.break_crafter"))) {
+                player.sendMessage(ChatColor.RED + "Ты че баклан, дефективный?");
+                event.setCancelled(true);
+            }
         }
     }
 
