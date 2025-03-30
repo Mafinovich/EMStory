@@ -1,0 +1,20 @@
+name: EMStory
+version: '1.0'
+main: mafiaprod.emstory.EMStory
+api-version: '1.16'
+permissions:
+  emstory.hiddenitem:
+    description: Позволяет получать скрытые предметы с помощью команды
+    default: op
+  emstory.invasion:
+    description: Позволяет управлять событием нашествия из Ада
+    default: op
+commands:
+  giveitem:
+    description: Выдать скрытый предмет
+    usage: /giveitem <предмет>
+    permission: emstory.hiddenitem
+  invasion:
+    description: Управление нашествием из Ада
+    usage: /invasion <list|start|stop|status>
+    permission: emstory.invasion
